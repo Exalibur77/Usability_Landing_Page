@@ -1,0 +1,126 @@
+@media screen and (max-width:991px) {
+    
+    h3{
+        font-size: 1.3rem;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block:31px ;
+        transition: 0.2s ease-out;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .cta-section{
+        margin-top: 40px;
+        height: 360px;
+    }
+
+    .cta-content{
+        gap: 8px;
+    }
+
+    .big-features{
+        margin: 20px 20px;
+    }
+
+    .example-cards-container{
+        flex-wrap: wrap;
+    }
+
+    .example-cards-container  a{
+        width: calc(50% - 10px);
+    }
+    
+    
+}
+
+
+@media screen and (max-width:767px) {
+
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+
+    .left_hero{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .right_hero img{
+        height: 400px;
+    }
+
+    .primary-button{
+        width: 100%;
+    }
+
+    .methods{
+
+        width: 45%;
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+    
+    #feature_2{
+        flex-direction: column-reverse;
+    }
+
+    .footer-container{
+        height: 1000px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width :479px) {
+    
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .methods{
+
+        width: 95%;
+    }
+
+    .example-cards-container  a{
+        width: 100%;
+    }
+}

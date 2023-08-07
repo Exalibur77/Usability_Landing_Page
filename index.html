@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UsabilityHub</title>
     <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="media-queries.css">    
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             </a>
 
 
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
 
                 <ul class="flex">
                     <li> <a href="#" class ="hover-links">Product </a> </li>
@@ -42,8 +43,12 @@
                     <li> <a href="#" class ="hover-links primary-button"> Sign Up</a></li>
                 </ul>
 
-
             </div>
+
+            <a href="#" class="nav-toggle hover-links" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
         </div>
 
     </nav>
@@ -217,7 +222,7 @@
     </section>
     <section class="big-features">
         
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="feature_2">
             
             <div class="feature-desc flex">
                 
@@ -424,5 +429,17 @@
     <!-- <section class="scroller" style="height: 100vh"></section> -->
 
     <script src="https://kit.fontawesome.com/9a689a2858.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click' , ()=>{
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
+
 </body>
 </html>

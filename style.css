@@ -74,6 +74,7 @@ a{
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease ease-out;
+    text-align: center;
 }   
 
 .primary-button:hover{
@@ -121,6 +122,7 @@ a{
 .container{
     max-width: 1186px;
     margin-inline: auto;
+    overflow: hidden;
 }
 
 
@@ -129,14 +131,20 @@ a{
 .main-nav{
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .company-logo img{
     width: 200px;
+    padding: 20px;
 }
 
 .nav-links{
     flex-basis: 730px;
+}
+
+.nav-toggle{
+    display: none;
 }
 
 .nav-links ul{
@@ -147,6 +155,7 @@ a{
 .hover-links{
     color: var(--primary-text-color);
     transition: 0.2s ease;
+    text-align: center;
 }
 
 .hover-links:hover{
@@ -177,9 +186,15 @@ a{
     color: var(--secondary-text-color);
 }
 
+.left_hero{
+    margin-left: 20px;
+}
+.right_hero{
+    margin-right: 20px;
+}
+
 .header-image{
-    width: 600px;
-    height: 450px;
+    width: 100%;
 }
 
 /* company-section */
@@ -187,12 +202,15 @@ a{
 .company-section{
     margin-top: 5px;
     margin-bottom:100px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .company-images{
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .company-images>img{
@@ -216,8 +234,9 @@ a{
 
 .methodologies{
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 20px;
 }
 
 .methods{
@@ -267,6 +286,10 @@ a{
     align-items: flex-start;
 }
 
+.features-header h2{
+    text-align: center;
+}
+
 
 /* Example section */
 
@@ -285,12 +308,20 @@ a{
     color: var(--primary-text-color);
 }
 
+.example-header h2{
+    text-align: center;
+}
+
 .example-cards-container{
     gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .example-card{
     height: 400px;
+    width: 100%;
     color: white;
     justify-content: flex-end;
     transition: 0.2s ease-out;
@@ -320,7 +351,7 @@ a{
 /* cta section */
 
 .cta-section{
-    height: 500px;
+    height: 400px;
     background-color: var(--primary-text-color);
     margin-top: 80px;
     color: white;
@@ -355,7 +386,7 @@ footer{
 }
 
 .footer-container{
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 400px;
     padding-block: 50px;
 }
@@ -393,6 +424,8 @@ footer{
 
 .sub-footer-container{
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .sub-footer-left ul{
@@ -403,6 +436,7 @@ footer{
 .sub-footer-right{
     justify-content: flex-end;
     gap: 20px;
+    
 }
 
 
